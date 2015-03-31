@@ -122,7 +122,6 @@ int main(void) {
 	uint8_t bt = 0;
 #if defined(F_APP_TFTP)
 	uint32_t tftp_server;
-	uint8_t *filename;
 #endif
 
 #if defined (__USE_LPCOPEN)
