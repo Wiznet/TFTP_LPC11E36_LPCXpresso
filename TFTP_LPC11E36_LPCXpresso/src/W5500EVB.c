@@ -196,6 +196,7 @@ int main(void) {
 		{
 			printf("\r\n########## SW2 was pressed.\r\n");
 #if defined(F_APP_TFTP)
+			strncpy(filename, 0x00, 50);
 			strncpy(filename, "test.txt", 8);
 
 			tftp_server = (destip[0] << 24) | (destip[1] << 16) | (destip[2] << 8) | (destip[3]);
